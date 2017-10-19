@@ -9,8 +9,8 @@ class Certifications extends Component {
 	    });
 		return(
 			<div>
-			<h3>{certsData.title}</h3>
-			<ul>{getCerts}</ul>
+				<h3>{certsData.title}</h3>
+				<ul>{getCerts}</ul>
 			</div>
 		) 
 	}

@@ -15,8 +15,8 @@ class Work extends Component {
     
     return (
       <div>
-      <h3>{sectionData.title}</h3>
-      {getWorkItems()}
+        <h3>{sectionData.title}</h3>
+        {getWorkItems()}
       </div>
     );
   }

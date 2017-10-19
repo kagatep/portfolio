@@ -1,6 +1,4 @@
 @import "_vars.scss";
-@import "_portfolio.scss";
-@import "_welcome.scss";
 
 * {
 	box-sizing: border-box;
@@ -8,9 +6,11 @@
 body {
   font-family: $font-body;
   font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  color: $grey;
 }
 html {
-  font-size: 17px;
+  font-size: 1em;
   line-height: 1.6em;
 }
 
@@ -18,10 +18,44 @@ html {
 	width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-	background: #e4d2e4;
+	background: $purple;
 }
+
+$padding-desktop: 3em;
+$padding-mobile: $padding-desktop / 2;
 .main {
 	> div {
-  	padding: 0 3em; 
+    padding-left: $padding-mobile; 
+  	padding-right: $padding-mobile; 
+
+    @include for-tablet-landscape-up { 
+      padding-left: $padding-desktop; 
+    padding-right: $padding-desktop; 
+    }
   }
 }
+
+h1, h2, h3 {
+  font-family: $font-heading;
+  font-weight: 400;
+}
+h2 {
+  @include for-tablet-landscape-up { 
+    font-size: 2.1vw;
+    line-height: 3.5vw;
+  }
+}
+a {
+  color: $dark-purple;
+  transition: 300ms all ease-in;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+@import "_resume.scss";
+@import "_welcome.scss";
+@import "_contact.scss";
+

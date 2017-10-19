@@ -14,14 +14,11 @@ class Skills extends Component {
 		const getColumns = columns.map((item, index) => <SkillsColumn key={index} sectionData={item} />);
 		return(
 			<div>
-			<h3>{skillsData.title}</h3>
-			<div className="skills">
-				{getColumns}
-			</div>
+				<h3>{skillsData.title}</h3>
+				<div className="skills">{getColumns}</div>
 			</div>
 		) 
 	}
-
 }
 
 class SkillsColumn extends Component {

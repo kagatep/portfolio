@@ -12,7 +12,8 @@ class Resume extends Component {
     return (
       <div className="resume">
         <div className="content">
-          <Info jsonData={json.info} />
+          <h2>Resume</h2>
+          {/* <Info jsonData={json.info} /> */}
           <Experience jsonData={json.experience} />
           <Education jsonData={json.education} />
           <Certifications jsonData={json.certifications} />
