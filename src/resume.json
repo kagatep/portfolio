@@ -61,7 +61,8 @@
 		"degree": "Bachelor of Science, Graphic Communication, <em>cum laude</em>, June 2013<br />Concentration in Design Reproduction Technology"
 	},
 	"certifications": {
-		"title": [
+		"title": "Certifications",
+		"certs": [
 			"Microsoft® Certified Professional",
 			"Microsoft® Specialist: Programming in HTML5 with JavaScript and CSS3"
 		]
@@ -69,7 +70,7 @@
 	"skillz":{
 		"title": "Professional Skillset",
 		"skills": [
-			"HTML / CSS / JS /C#",
+			"HTML / CSS / JS",
 			"LESS/SASS",
 			"Backbone.js",
 			"Node.js",
@@ -81,7 +82,6 @@
 			"Google Analytics",
 			"Adobe Experience Manager",
 			"WordPress",
-			"Squarespace",
 			"Git / Subversion",
 			"Jira / Team Foundation Server",
 			"Adobe Photoshop / Illustrator / InDesign"
