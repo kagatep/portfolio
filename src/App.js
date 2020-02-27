@@ -1,20 +1,26 @@
-import React, { Component } from 'react';
-import './App.css';
-import Welcome from './components/Welcome'; 
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import React, { useState } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="main">
-        <Welcome />
-        <Resume />
-        <Contact />
-      </div>
-    );
-  }
-}
+import { ThemeProvider } from 'emotion-theming';
 
+import Main from './containers/Main';
+import ThemeContext from './context/ThemeContext';
+
+const THEME_COLORS = require('./colors');
+
+const App = () => {
+  const themeHook = useState('lightTheme');
+
+  const theme = {
+    colors: THEME_COLORS[themeHook[0]],
+  };
+
+  return (
+    <ThemeContext.Provider value={themeHook}>
+      <ThemeProvider theme={theme}>
+        <Main />
+      </ThemeProvider>
+    </ThemeContext.Provider>
+  );
+};
 
 export default App;
