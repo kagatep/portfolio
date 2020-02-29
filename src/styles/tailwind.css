@@ -4,34 +4,41 @@ body {
   font-family: 'Yantramanav', sans-serif;
   font-weight: 300;
   @apply antialiased;
-  @apply text-defaulttext;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 16px;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-dahlia;
 }
 
 a {
-  @apply underline;
+  border-bottom: 1px solid;
+  transition: all 200ms;
+  border-color: inherit;
+}
+
+a:hover {
+  padding-bottom: 3px;
 }
 
 h1,
 h2,
 h3 {
   @apply font-display;
-  font-weight: 600;
+  @apply font-semibold;
+  line-height: 1.04;
 }
 
 h3 {
-  @apply text-xl;
+  @apply text-2xl;
 }
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  @apply font-medium;
+  line-height: 1.26;
 }
 
 @tailwind components;

@@ -20,7 +20,7 @@ function Main() {
     <>
       <Welcome />
       <Resume>
-        <div className="container px-4 py-16 mx-auto">
+        <div className="container px-4 md:px-8 py-16 mx-auto">
           <WorkExperience />
           <Education />
           <Skillset />

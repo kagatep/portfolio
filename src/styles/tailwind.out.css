@@ -583,11 +583,10 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #0b1222;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -595,7 +594,13 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  border-bottom: 1px solid;
+  transition: all 200ms;
+  border-color: inherit;
+}
+
+a:hover {
+  padding-bottom: 3px;
 }
 
 h1,
@@ -603,16 +608,18 @@ h2,
 h3 {
   font-family: Playfair Display, serif;
   font-weight: 600;
+  line-height: 1.04;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 1.26;
 }
 
 .container {

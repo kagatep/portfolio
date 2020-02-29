@@ -4,17 +4,15 @@ import tw from 'tailwind.macro';
 
 import ThemeContext from '../context/ThemeContext';
 
-import Me from '../img/Agatep_Krisha_v1_light.jpg';
-import MeDark from '../img/Agatep_Krisha_v1_navy.jpg';
+import Me from '../img/Agatep_Krisha_v1.png';
 
 const StyledWelcome = styled.div`
-  ${tw`min-h-screen flex flex-col items-center justify-start lg:justify-center text-xl relative`};
-  //${({ isPurple }) => isPurple && tw`bg-violet`}
+  ${tw`md:min-h-screen flex flex-col items-center justify-start lg:justify-center text-xl relative`};
   background: ${(props) => props.theme.colors.accent};
 `;
 
 const Image = styled.picture`
-  ${tw`absolute inset-0`};
+  ${tw`absolute inset-0 invisible md:visible`};
 
   img {
     ${tw`object-left object-cover h-full`};
@@ -23,62 +21,90 @@ const Image = styled.picture`
 
 const Tint = styled.div`
   ${tw`absolute inset-0`};
-  background: linear-gradient(transparent, ${(props) => props.theme.colors.accent}50);
+  transition: all 300ms 100ms;
+  background: linear-gradient(transparent, ${(props) => props.theme.colors.accent}70);
 `;
 
 const Content = styled.div`
-  ${tw`relative lg:w-3/5 lg:self-end p-4`};
+  ${tw`relative lg:text-center lg:w-4/5 lg:self-end px-4 py-16`};
   color: ${(props) => props.theme.colors.defaulttext};
-`;
-
-const H1 = styled.h1`
-  ${tw`relative font-display text-5xl`};
-  line-height: 1.25;
+  transition: all 300ms 100ms;
+  transition-timing-function: ease-out;
 `;
 
 const Amp = styled.span`
-  ${tw`italic`};
+  ${tw`absolute italic opacity-50 md:opacity-100`};
   color: ${(props) => props.theme.colors.gold};
-  font-size: 8rem;
-  bottom: -2rem;
-  margin-left: -2rem;
+  font-size: 7rem;
+  bottom: -1.5rem;
+  margin-left: -1.5rem;
   z-index: 0;
-  position: absolute;
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+  position: relative;
+  z-index: 0;
+  :before {
+    content: '';
+    position: absolute;
+    left: -0.25rem;
+    right: -0.25rem;
+    top: 1rem;
+    bottom: -0.25rem;
+    background: ${(props) => props.theme.colors.bg};
+    transform: skew(-8deg) scale(1) rotate(-2deg);
+    z-index: -1;
+  }
+`;
+
 const Welcome = () => {
   const [themeMode, setThemeMode] = useContext(ThemeContext);
 
   return (
-    <StyledWelcome isPurple={false}>
+    <StyledWelcome>
       <Image>
-        <img src={themeMode === 'lightTheme' ? Me : MeDark} alt="Krisha Agatep" />
+        <img src={Me} alt="Krisha Agatep" />
       </Image>
       <Tint />
       <Content>
-        <H1>
+        <h1 className="relative text-5xl mb-4">
           <span className="relative z-10">Hi, my name is Krisha</span> <Amp>&</Amp>
-        </H1>
-        <h2 className="font-display text-3xl">
-          I want to make the web a <Span className="italic">beautiful</Span> place.
+        </h1>
+        <h2 className="text-3xl">
+          I want to make the web a <Span className="inline-block">beautiful</Span> place.
         </h2>
-        <p>
-          Brunch enthusiast / fitness addict. Brand Manager to{' '}
+        <p className="text-xl my-3">
+          Brunch enthusiast. Fitness addict. <br />
+          Brand Manager to @
           <a
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Whiskey the Cockapoo on Instagram (opens in a new tab)"
             href="https://www.instagram.com/whiskeythecockapoo/?hl=en">
-            @whiskeythecockapoo
+            whiskeythecockapoo
           </a>
           .
         </p>
-        <h3
-          onClick={() => {
-            setThemeMode(themeMode === 'lightTheme' ? 'darkTheme' : 'lightTheme');
-          }}>
-          Update theme
-        </h3>
+        <p>
+          view in:{' '}
+          <span
+            aria-label="Changes theme to light mode"
+            className="font-medium cursor-pointer"
+            onClick={() => {
+              setThemeMode('lightTheme');
+            }}>
+            light mode
+          </span>{' '}
+          //{' '}
+          <span
+            aria-label="Changes theme to dark mode"
+            className="font-medium cursor-pointer"
+            onClick={() => {
+              setThemeMode('darkTheme');
+            }}>
+            dark mode
+          </span>
+        </p>
       </Content>
     </StyledWelcome>
   );

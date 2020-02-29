@@ -16,7 +16,7 @@ const columns = SKILLSET.reduce((resultArray, item, index) => {
 
 const Skillset = () => (
   <div>
-    <h3>Skillset</h3>
+    <h3 className="mb-2">Skillset</h3>
     <div className="md:flex text-lg">
       {columns.map((column, i) => (
         <div className="flex-1" key={`column${i}`}>

@@ -26,7 +26,7 @@ const Responsibilities = ({ list }) => {
 const WorkExperience = () => {
   return (
     <div className="mb-8">
-      <h3>Work Experience</h3>
+      <h3 className="mb-2">Work Experience</h3>
       {EXPERIENCE.map((x) => (
         <div className="mb-4 text-lg" key={x.company}>
           <h4>

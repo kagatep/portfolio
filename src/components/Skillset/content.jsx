@@ -7,6 +7,7 @@ export const SKILLSET = [
   'jQuery / jQuery UI / jQuery Mobile',
   'LESS / SASS / PostCSS',
   'styled-components',
+  'Storybook',
   'Gulp / Grunt',
   'Webpack',
   'Optimizely',

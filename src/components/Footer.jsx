@@ -9,13 +9,13 @@ const StyledFooter = styled.footer`
 `;
 
 const Link = styled.a`
-  ${tw`text-lg px-2`};
+  ${tw`text-lg mx-2`};
 `;
 
 const Footer = () => (
   <StyledFooter>
     <h2 className="text-2xl mb-4">contact me</h2>
-    <Link href="mailto:krishaagatep@yahoo.com">kagatep1@gmail.com</Link> |
+    <Link href="mailto:krishaagatep@yahoo.com">kagatep1@gmail.com</Link>
     <Link href="tel:1-707-290-0090">707.290.0090</Link>
     <br />
     <Link href="https://github.com/kagatep" target="_blank" rel="noopener noreferrer">
