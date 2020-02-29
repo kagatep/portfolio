@@ -579,14 +579,14 @@ video {
 }
 
 body {
-  font-family: 'Yantramanav', sans-serif;
+  font-family: Yantramanav, sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -620,34 +620,6 @@ h5,
 h6 {
   font-weight: 500;
   line-height: 1.26;
-}
-
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
 }
 
 .sr-only {
@@ -1070,18 +1042,6 @@ h6 {
   background-color: #FFE1EB;
 }
 
-.bg-defaulttext {
-  background-color: #0b1222;
-}
-
-.bg-bg {
-  background-color: #efefef;
-}
-
-.bg-accent {
-  background-color: #FFE1EB;
-}
-
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1438,18 +1398,6 @@ h6 {
   background-color: #FFE1EB;
 }
 
-.hover\:bg-defaulttext:hover {
-  background-color: #0b1222;
-}
-
-.hover\:bg-bg:hover {
-  background-color: #efefef;
-}
-
-.hover\:bg-accent:hover {
-  background-color: #FFE1EB;
-}
-
 .focus\:bg-transparent:focus {
   background-color: transparent;
 }
@@ -1803,18 +1751,6 @@ h6 {
 }
 
 .focus\:bg-millenialpink:focus {
-  background-color: #FFE1EB;
-}
-
-.focus\:bg-defaulttext:focus {
-  background-color: #0b1222;
-}
-
-.focus\:bg-bg:focus {
-  background-color: #efefef;
-}
-
-.focus\:bg-accent:focus {
   background-color: #FFE1EB;
 }
 
@@ -2254,18 +2190,6 @@ h6 {
   border-color: #FFE1EB;
 }
 
-.border-defaulttext {
-  border-color: #0b1222;
-}
-
-.border-bg {
-  border-color: #efefef;
-}
-
-.border-accent {
-  border-color: #FFE1EB;
-}
-
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -2622,18 +2546,6 @@ h6 {
   border-color: #FFE1EB;
 }
 
-.hover\:border-defaulttext:hover {
-  border-color: #0b1222;
-}
-
-.hover\:border-bg:hover {
-  border-color: #efefef;
-}
-
-.hover\:border-accent:hover {
-  border-color: #FFE1EB;
-}
-
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -2987,18 +2899,6 @@ h6 {
 }
 
 .focus\:border-millenialpink:focus {
-  border-color: #FFE1EB;
-}
-
-.focus\:border-defaulttext:focus {
-  border-color: #0b1222;
-}
-
-.focus\:border-bg:focus {
-  border-color: #efefef;
-}
-
-.focus\:border-accent:focus {
   border-color: #FFE1EB;
 }
 
@@ -3694,6 +3594,10 @@ h6 {
 
 .clear-both {
   clear: both;
+}
+
+.font-body {
+  font-family: Yantramanav, sans-serif;
 }
 
 .font-display {
@@ -6310,18 +6214,6 @@ h6 {
   color: #FFE1EB;
 }
 
-.placeholder-defaulttext::placeholder {
-  color: #0b1222;
-}
-
-.placeholder-bg::placeholder {
-  color: #efefef;
-}
-
-.placeholder-accent::placeholder {
-  color: #FFE1EB;
-}
-
 .focus\:placeholder-transparent:focus::placeholder {
   color: transparent;
 }
@@ -6675,18 +6567,6 @@ h6 {
 }
 
 .focus\:placeholder-millenialpink:focus::placeholder {
-  color: #FFE1EB;
-}
-
-.focus\:placeholder-defaulttext:focus::placeholder {
-  color: #0b1222;
-}
-
-.focus\:placeholder-bg:focus::placeholder {
-  color: #efefef;
-}
-
-.focus\:placeholder-accent:focus::placeholder {
   color: #FFE1EB;
 }
 
@@ -7321,18 +7201,6 @@ h6 {
   color: #FFE1EB;
 }
 
-.text-defaulttext {
-  color: #0b1222;
-}
-
-.text-bg {
-  color: #efefef;
-}
-
-.text-accent {
-  color: #FFE1EB;
-}
-
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -7689,18 +7557,6 @@ h6 {
   color: #FFE1EB;
 }
 
-.hover\:text-defaulttext:hover {
-  color: #0b1222;
-}
-
-.hover\:text-bg:hover {
-  color: #efefef;
-}
-
-.hover\:text-accent:hover {
-  color: #FFE1EB;
-}
-
 .focus\:text-transparent:focus {
   color: transparent;
 }
@@ -8054,18 +7910,6 @@ h6 {
 }
 
 .focus\:text-millenialpink:focus {
-  color: #FFE1EB;
-}
-
-.focus\:text-defaulttext:focus {
-  color: #0b1222;
-}
-
-.focus\:text-bg:focus {
-  color: #efefef;
-}
-
-.focus\:text-accent:focus {
   color: #FFE1EB;
 }
 
@@ -11325,18 +11169,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .sm\:bg-defaulttext {
-    background-color: #0b1222;
-  }
-
-  .sm\:bg-bg {
-    background-color: #efefef;
-  }
-
-  .sm\:bg-accent {
-    background-color: #FFE1EB;
-  }
-
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -11693,18 +11525,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .sm\:hover\:bg-defaulttext:hover {
-    background-color: #0b1222;
-  }
-
-  .sm\:hover\:bg-bg:hover {
-    background-color: #efefef;
-  }
-
-  .sm\:hover\:bg-accent:hover {
-    background-color: #FFE1EB;
-  }
-
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -12058,18 +11878,6 @@ h6 {
   }
 
   .sm\:focus\:bg-millenialpink:focus {
-    background-color: #FFE1EB;
-  }
-
-  .sm\:focus\:bg-defaulttext:focus {
-    background-color: #0b1222;
-  }
-
-  .sm\:focus\:bg-bg:focus {
-    background-color: #efefef;
-  }
-
-  .sm\:focus\:bg-accent:focus {
     background-color: #FFE1EB;
   }
 
@@ -12509,18 +12317,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .sm\:border-defaulttext {
-    border-color: #0b1222;
-  }
-
-  .sm\:border-bg {
-    border-color: #efefef;
-  }
-
-  .sm\:border-accent {
-    border-color: #FFE1EB;
-  }
-
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -12877,18 +12673,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .sm\:hover\:border-defaulttext:hover {
-    border-color: #0b1222;
-  }
-
-  .sm\:hover\:border-bg:hover {
-    border-color: #efefef;
-  }
-
-  .sm\:hover\:border-accent:hover {
-    border-color: #FFE1EB;
-  }
-
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -13242,18 +13026,6 @@ h6 {
   }
 
   .sm\:focus\:border-millenialpink:focus {
-    border-color: #FFE1EB;
-  }
-
-  .sm\:focus\:border-defaulttext:focus {
-    border-color: #0b1222;
-  }
-
-  .sm\:focus\:border-bg:focus {
-    border-color: #efefef;
-  }
-
-  .sm\:focus\:border-accent:focus {
     border-color: #FFE1EB;
   }
 
@@ -13949,6 +13721,10 @@ h6 {
 
   .sm\:clear-both {
     clear: both;
+  }
+
+  .sm\:font-body {
+    font-family: Yantramanav, sans-serif;
   }
 
   .sm\:font-display {
@@ -16565,18 +16341,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .sm\:placeholder-defaulttext::placeholder {
-    color: #0b1222;
-  }
-
-  .sm\:placeholder-bg::placeholder {
-    color: #efefef;
-  }
-
-  .sm\:placeholder-accent::placeholder {
-    color: #FFE1EB;
-  }
-
   .sm\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -16930,18 +16694,6 @@ h6 {
   }
 
   .sm\:focus\:placeholder-millenialpink:focus::placeholder {
-    color: #FFE1EB;
-  }
-
-  .sm\:focus\:placeholder-defaulttext:focus::placeholder {
-    color: #0b1222;
-  }
-
-  .sm\:focus\:placeholder-bg:focus::placeholder {
-    color: #efefef;
-  }
-
-  .sm\:focus\:placeholder-accent:focus::placeholder {
     color: #FFE1EB;
   }
 
@@ -17576,18 +17328,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .sm\:text-defaulttext {
-    color: #0b1222;
-  }
-
-  .sm\:text-bg {
-    color: #efefef;
-  }
-
-  .sm\:text-accent {
-    color: #FFE1EB;
-  }
-
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -17944,18 +17684,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .sm\:hover\:text-defaulttext:hover {
-    color: #0b1222;
-  }
-
-  .sm\:hover\:text-bg:hover {
-    color: #efefef;
-  }
-
-  .sm\:hover\:text-accent:hover {
-    color: #FFE1EB;
-  }
-
   .sm\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -18309,18 +18037,6 @@ h6 {
   }
 
   .sm\:focus\:text-millenialpink:focus {
-    color: #FFE1EB;
-  }
-
-  .sm\:focus\:text-defaulttext:focus {
-    color: #0b1222;
-  }
-
-  .sm\:focus\:text-bg:focus {
-    color: #efefef;
-  }
-
-  .sm\:focus\:text-accent:focus {
     color: #FFE1EB;
   }
 
@@ -21581,18 +21297,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .md\:bg-defaulttext {
-    background-color: #0b1222;
-  }
-
-  .md\:bg-bg {
-    background-color: #efefef;
-  }
-
-  .md\:bg-accent {
-    background-color: #FFE1EB;
-  }
-
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -21949,18 +21653,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .md\:hover\:bg-defaulttext:hover {
-    background-color: #0b1222;
-  }
-
-  .md\:hover\:bg-bg:hover {
-    background-color: #efefef;
-  }
-
-  .md\:hover\:bg-accent:hover {
-    background-color: #FFE1EB;
-  }
-
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -22314,18 +22006,6 @@ h6 {
   }
 
   .md\:focus\:bg-millenialpink:focus {
-    background-color: #FFE1EB;
-  }
-
-  .md\:focus\:bg-defaulttext:focus {
-    background-color: #0b1222;
-  }
-
-  .md\:focus\:bg-bg:focus {
-    background-color: #efefef;
-  }
-
-  .md\:focus\:bg-accent:focus {
     background-color: #FFE1EB;
   }
 
@@ -22765,18 +22445,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .md\:border-defaulttext {
-    border-color: #0b1222;
-  }
-
-  .md\:border-bg {
-    border-color: #efefef;
-  }
-
-  .md\:border-accent {
-    border-color: #FFE1EB;
-  }
-
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -23133,18 +22801,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .md\:hover\:border-defaulttext:hover {
-    border-color: #0b1222;
-  }
-
-  .md\:hover\:border-bg:hover {
-    border-color: #efefef;
-  }
-
-  .md\:hover\:border-accent:hover {
-    border-color: #FFE1EB;
-  }
-
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -23498,18 +23154,6 @@ h6 {
   }
 
   .md\:focus\:border-millenialpink:focus {
-    border-color: #FFE1EB;
-  }
-
-  .md\:focus\:border-defaulttext:focus {
-    border-color: #0b1222;
-  }
-
-  .md\:focus\:border-bg:focus {
-    border-color: #efefef;
-  }
-
-  .md\:focus\:border-accent:focus {
     border-color: #FFE1EB;
   }
 
@@ -24205,6 +23849,10 @@ h6 {
 
   .md\:clear-both {
     clear: both;
+  }
+
+  .md\:font-body {
+    font-family: Yantramanav, sans-serif;
   }
 
   .md\:font-display {
@@ -26821,18 +26469,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .md\:placeholder-defaulttext::placeholder {
-    color: #0b1222;
-  }
-
-  .md\:placeholder-bg::placeholder {
-    color: #efefef;
-  }
-
-  .md\:placeholder-accent::placeholder {
-    color: #FFE1EB;
-  }
-
   .md\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -27186,18 +26822,6 @@ h6 {
   }
 
   .md\:focus\:placeholder-millenialpink:focus::placeholder {
-    color: #FFE1EB;
-  }
-
-  .md\:focus\:placeholder-defaulttext:focus::placeholder {
-    color: #0b1222;
-  }
-
-  .md\:focus\:placeholder-bg:focus::placeholder {
-    color: #efefef;
-  }
-
-  .md\:focus\:placeholder-accent:focus::placeholder {
     color: #FFE1EB;
   }
 
@@ -27832,18 +27456,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .md\:text-defaulttext {
-    color: #0b1222;
-  }
-
-  .md\:text-bg {
-    color: #efefef;
-  }
-
-  .md\:text-accent {
-    color: #FFE1EB;
-  }
-
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -28200,18 +27812,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .md\:hover\:text-defaulttext:hover {
-    color: #0b1222;
-  }
-
-  .md\:hover\:text-bg:hover {
-    color: #efefef;
-  }
-
-  .md\:hover\:text-accent:hover {
-    color: #FFE1EB;
-  }
-
   .md\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -28565,18 +28165,6 @@ h6 {
   }
 
   .md\:focus\:text-millenialpink:focus {
-    color: #FFE1EB;
-  }
-
-  .md\:focus\:text-defaulttext:focus {
-    color: #0b1222;
-  }
-
-  .md\:focus\:text-bg:focus {
-    color: #efefef;
-  }
-
-  .md\:focus\:text-accent:focus {
     color: #FFE1EB;
   }
 
@@ -31837,18 +31425,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .lg\:bg-defaulttext {
-    background-color: #0b1222;
-  }
-
-  .lg\:bg-bg {
-    background-color: #efefef;
-  }
-
-  .lg\:bg-accent {
-    background-color: #FFE1EB;
-  }
-
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -32205,18 +31781,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .lg\:hover\:bg-defaulttext:hover {
-    background-color: #0b1222;
-  }
-
-  .lg\:hover\:bg-bg:hover {
-    background-color: #efefef;
-  }
-
-  .lg\:hover\:bg-accent:hover {
-    background-color: #FFE1EB;
-  }
-
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -32570,18 +32134,6 @@ h6 {
   }
 
   .lg\:focus\:bg-millenialpink:focus {
-    background-color: #FFE1EB;
-  }
-
-  .lg\:focus\:bg-defaulttext:focus {
-    background-color: #0b1222;
-  }
-
-  .lg\:focus\:bg-bg:focus {
-    background-color: #efefef;
-  }
-
-  .lg\:focus\:bg-accent:focus {
     background-color: #FFE1EB;
   }
 
@@ -33021,18 +32573,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .lg\:border-defaulttext {
-    border-color: #0b1222;
-  }
-
-  .lg\:border-bg {
-    border-color: #efefef;
-  }
-
-  .lg\:border-accent {
-    border-color: #FFE1EB;
-  }
-
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -33389,18 +32929,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .lg\:hover\:border-defaulttext:hover {
-    border-color: #0b1222;
-  }
-
-  .lg\:hover\:border-bg:hover {
-    border-color: #efefef;
-  }
-
-  .lg\:hover\:border-accent:hover {
-    border-color: #FFE1EB;
-  }
-
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -33754,18 +33282,6 @@ h6 {
   }
 
   .lg\:focus\:border-millenialpink:focus {
-    border-color: #FFE1EB;
-  }
-
-  .lg\:focus\:border-defaulttext:focus {
-    border-color: #0b1222;
-  }
-
-  .lg\:focus\:border-bg:focus {
-    border-color: #efefef;
-  }
-
-  .lg\:focus\:border-accent:focus {
     border-color: #FFE1EB;
   }
 
@@ -34461,6 +33977,10 @@ h6 {
 
   .lg\:clear-both {
     clear: both;
+  }
+
+  .lg\:font-body {
+    font-family: Yantramanav, sans-serif;
   }
 
   .lg\:font-display {
@@ -37077,18 +36597,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .lg\:placeholder-defaulttext::placeholder {
-    color: #0b1222;
-  }
-
-  .lg\:placeholder-bg::placeholder {
-    color: #efefef;
-  }
-
-  .lg\:placeholder-accent::placeholder {
-    color: #FFE1EB;
-  }
-
   .lg\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -37442,18 +36950,6 @@ h6 {
   }
 
   .lg\:focus\:placeholder-millenialpink:focus::placeholder {
-    color: #FFE1EB;
-  }
-
-  .lg\:focus\:placeholder-defaulttext:focus::placeholder {
-    color: #0b1222;
-  }
-
-  .lg\:focus\:placeholder-bg:focus::placeholder {
-    color: #efefef;
-  }
-
-  .lg\:focus\:placeholder-accent:focus::placeholder {
     color: #FFE1EB;
   }
 
@@ -38088,18 +37584,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .lg\:text-defaulttext {
-    color: #0b1222;
-  }
-
-  .lg\:text-bg {
-    color: #efefef;
-  }
-
-  .lg\:text-accent {
-    color: #FFE1EB;
-  }
-
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -38456,18 +37940,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .lg\:hover\:text-defaulttext:hover {
-    color: #0b1222;
-  }
-
-  .lg\:hover\:text-bg:hover {
-    color: #efefef;
-  }
-
-  .lg\:hover\:text-accent:hover {
-    color: #FFE1EB;
-  }
-
   .lg\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -38821,18 +38293,6 @@ h6 {
   }
 
   .lg\:focus\:text-millenialpink:focus {
-    color: #FFE1EB;
-  }
-
-  .lg\:focus\:text-defaulttext:focus {
-    color: #0b1222;
-  }
-
-  .lg\:focus\:text-bg:focus {
-    color: #efefef;
-  }
-
-  .lg\:focus\:text-accent:focus {
     color: #FFE1EB;
   }
 
@@ -42093,18 +41553,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .xl\:bg-defaulttext {
-    background-color: #0b1222;
-  }
-
-  .xl\:bg-bg {
-    background-color: #efefef;
-  }
-
-  .xl\:bg-accent {
-    background-color: #FFE1EB;
-  }
-
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -42461,18 +41909,6 @@ h6 {
     background-color: #FFE1EB;
   }
 
-  .xl\:hover\:bg-defaulttext:hover {
-    background-color: #0b1222;
-  }
-
-  .xl\:hover\:bg-bg:hover {
-    background-color: #efefef;
-  }
-
-  .xl\:hover\:bg-accent:hover {
-    background-color: #FFE1EB;
-  }
-
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -42826,18 +42262,6 @@ h6 {
   }
 
   .xl\:focus\:bg-millenialpink:focus {
-    background-color: #FFE1EB;
-  }
-
-  .xl\:focus\:bg-defaulttext:focus {
-    background-color: #0b1222;
-  }
-
-  .xl\:focus\:bg-bg:focus {
-    background-color: #efefef;
-  }
-
-  .xl\:focus\:bg-accent:focus {
     background-color: #FFE1EB;
   }
 
@@ -43277,18 +42701,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .xl\:border-defaulttext {
-    border-color: #0b1222;
-  }
-
-  .xl\:border-bg {
-    border-color: #efefef;
-  }
-
-  .xl\:border-accent {
-    border-color: #FFE1EB;
-  }
-
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -43645,18 +43057,6 @@ h6 {
     border-color: #FFE1EB;
   }
 
-  .xl\:hover\:border-defaulttext:hover {
-    border-color: #0b1222;
-  }
-
-  .xl\:hover\:border-bg:hover {
-    border-color: #efefef;
-  }
-
-  .xl\:hover\:border-accent:hover {
-    border-color: #FFE1EB;
-  }
-
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -44010,18 +43410,6 @@ h6 {
   }
 
   .xl\:focus\:border-millenialpink:focus {
-    border-color: #FFE1EB;
-  }
-
-  .xl\:focus\:border-defaulttext:focus {
-    border-color: #0b1222;
-  }
-
-  .xl\:focus\:border-bg:focus {
-    border-color: #efefef;
-  }
-
-  .xl\:focus\:border-accent:focus {
     border-color: #FFE1EB;
   }
 
@@ -44717,6 +44105,10 @@ h6 {
 
   .xl\:clear-both {
     clear: both;
+  }
+
+  .xl\:font-body {
+    font-family: Yantramanav, sans-serif;
   }
 
   .xl\:font-display {
@@ -47333,18 +46725,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .xl\:placeholder-defaulttext::placeholder {
-    color: #0b1222;
-  }
-
-  .xl\:placeholder-bg::placeholder {
-    color: #efefef;
-  }
-
-  .xl\:placeholder-accent::placeholder {
-    color: #FFE1EB;
-  }
-
   .xl\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent;
   }
@@ -47698,18 +47078,6 @@ h6 {
   }
 
   .xl\:focus\:placeholder-millenialpink:focus::placeholder {
-    color: #FFE1EB;
-  }
-
-  .xl\:focus\:placeholder-defaulttext:focus::placeholder {
-    color: #0b1222;
-  }
-
-  .xl\:focus\:placeholder-bg:focus::placeholder {
-    color: #efefef;
-  }
-
-  .xl\:focus\:placeholder-accent:focus::placeholder {
     color: #FFE1EB;
   }
 
@@ -48344,18 +47712,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .xl\:text-defaulttext {
-    color: #0b1222;
-  }
-
-  .xl\:text-bg {
-    color: #efefef;
-  }
-
-  .xl\:text-accent {
-    color: #FFE1EB;
-  }
-
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -48712,18 +48068,6 @@ h6 {
     color: #FFE1EB;
   }
 
-  .xl\:hover\:text-defaulttext:hover {
-    color: #0b1222;
-  }
-
-  .xl\:hover\:text-bg:hover {
-    color: #efefef;
-  }
-
-  .xl\:hover\:text-accent:hover {
-    color: #FFE1EB;
-  }
-
   .xl\:focus\:text-transparent:focus {
     color: transparent;
   }
@@ -49077,18 +48421,6 @@ h6 {
   }
 
   .xl\:focus\:text-millenialpink:focus {
-    color: #FFE1EB;
-  }
-
-  .xl\:focus\:text-defaulttext:focus {
-    color: #0b1222;
-  }
-
-  .xl\:focus\:text-bg:focus {
-    color: #efefef;
-  }
-
-  .xl\:focus\:text-accent:focus {
     color: #FFE1EB;
   }
 

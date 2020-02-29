@@ -1,13 +1,13 @@
 @tailwind base;
 
 body {
-  font-family: 'Yantramanav', sans-serif;
-  font-weight: 300;
+  @apply font-body;
+  @apply font-light;
   @apply antialiased;
 }
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 12px;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-dahlia;
@@ -40,7 +40,5 @@ h6 {
   @apply font-medium;
   line-height: 1.26;
 }
-
-@tailwind components;
 
 @tailwind utilities;

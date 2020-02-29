@@ -1,8 +1,7 @@
-//const THEME_COLORS = require('./colors');
-
 module.exports = {
   theme: {
     fontFamily: {
+      body: ['Yantramanav', 'sans-serif'],
       display: ['Playfair Display', 'serif'],
     },
     extend: {
@@ -12,9 +11,6 @@ module.exports = {
         dahlia: '#fea49f',
         gold: '#fbaf08',
         millenialpink: '#FFE1EB',
-        defaulttext: '#0b1222',
-        bg: '#efefef',
-        accent: '#FFE1EB',
       },
     },
   },
