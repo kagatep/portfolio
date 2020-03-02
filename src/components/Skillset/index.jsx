@@ -1,7 +1,7 @@
 import React from 'react';
 import { SKILLSET } from './content';
 
-const columnLength = Math.floor(SKILLSET.length / 3);
+const columnLength = Math.ceil(SKILLSET.length / 3);
 const columns = SKILLSET.reduce((resultArray, item, index) => {
   const chunkIndex = Math.floor(index / columnLength);
 
@@ -15,7 +15,7 @@ const columns = SKILLSET.reduce((resultArray, item, index) => {
 }, []);
 
 const Skillset = () => (
-  <div>
+  <section>
     <h3 className="mb-2">Skillset</h3>
     <div className="md:flex text-lg">
       {columns.map((column, i) => (
@@ -26,7 +26,7 @@ const Skillset = () => (
         </div>
       ))}
     </div>
-  </div>
+  </section>
 );
 
 export default Skillset;

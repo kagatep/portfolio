@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Education = () => (
-  <div className="mb-8 text-lg">
+  <section className="mb-8">
     <h3 className="mb-2">Education</h3>
     <h4>California Polytechnic State University, San Luis Obispo</h4>
     <p>
@@ -9,7 +9,7 @@ const Education = () => (
       <br />
       Concentration in Design Reproduction Technology
     </p>
-  </div>
+  </section>
 );
 
 export default Education;

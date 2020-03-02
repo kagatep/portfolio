@@ -1,7 +1,7 @@
 const MAIN_THEME = {
   navy: '#101357',
   gray: '#efefef',
-  dahlia: '#fea49f',
+  dahlia: '#FEA49F',
   gold: '#fbaf08',
   millenialpink: '#FFE1EB',
 };
@@ -21,8 +21,3 @@ export const DARK_THEME = {
   accent: '#101357',
   secondaryaccent: '#FFE1EB',
 };
-
-// module.exports = {
-//   lightTheme: LIGHT_THEME,
-//   darkTheme: DARK_THEME,
-// };

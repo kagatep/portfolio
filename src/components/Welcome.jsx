@@ -1,17 +1,15 @@
 import React, { useContext } from 'react';
 import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
-
 import ThemeContext from '../context/ThemeContext';
-
 import Me from '../img/Agatep_Krisha_v1.png';
 
-const StyledWelcome = styled.div`
-  ${tw`md:min-h-screen flex flex-col items-center justify-start lg:justify-center text-xl relative`};
+const StyledWelcome = styled.header`
+  ${tw`relative md:min-h-screen flex flex-col items-center justify-start lg:justify-center`};
   background: ${(props) => props.theme.colors.accent};
 `;
 
-const Image = styled.picture`
+const Picture = styled.picture`
   ${tw`absolute inset-0 invisible md:visible`};
 
   img {
@@ -33,17 +31,14 @@ const Content = styled.div`
 `;
 
 const Amp = styled.span`
-  ${tw`absolute italic opacity-50 md:opacity-100`};
+  ${tw`absolute italic opacity-50 md:opacity-100 z-0`};
   color: ${(props) => props.theme.colors.gold};
   font-size: 7rem;
-  bottom: -1.5rem;
   margin-left: -1.5rem;
-  z-index: 0;
 `;
 
-const Span = styled.span`
-  position: relative;
-  z-index: 0;
+const Underline = styled.span`
+  ${tw`relative inline-block z-0`};
   :before {
     content: '';
     position: absolute;
@@ -62,16 +57,16 @@ const Welcome = () => {
 
   return (
     <StyledWelcome>
-      <Image>
+      <Picture>
         <img src={Me} alt="Krisha Agatep" />
-      </Image>
+      </Picture>
       <Tint />
       <Content>
-        <h1 className="relative text-5xl mb-4">
+        <h1 className="relative text-5xl mb-8">
           <span className="relative z-10">Hi, my name is Krisha</span> <Amp>&</Amp>
         </h1>
         <h2 className="text-3xl">
-          I want to make the web a <Span className="inline-block">beautiful</Span> place.
+          I want to make the web a <Underline>beautiful</Underline> place.
         </h2>
         <p className="text-xl my-3">
           Brunch enthusiast. Fitness addict. <br />
@@ -85,7 +80,7 @@ const Welcome = () => {
           </a>
           .
         </p>
-        <p>
+        <p className="text-xl">
           view in:{' '}
           <span
             aria-label="Changes theme to light mode"

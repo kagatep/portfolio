@@ -583,6 +583,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -608,7 +609,7 @@ h2,
 h3 {
   font-family: Playfair Display, serif;
   font-weight: 600;
-  line-height: 1.04;
+  line-height: 1.5rem;
 }
 
 h3 {
@@ -619,7 +620,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  line-height: 1.26;
+  line-height: 1.5rem;
 }
 
 .sr-only {
