@@ -5,12 +5,12 @@ import ThemeContext from '../context/ThemeContext';
 import Me from '../img/Agatep_Krisha_v1.png';
 
 const StyledWelcome = styled.header`
-  ${tw`relative md:min-h-screen flex flex-col items-center justify-start lg:justify-center`};
+  ${tw`relative lg:min-h-screen flex flex-col items-center justify-start lg:justify-center`};
   background: ${(props) => props.theme.colors.accent};
 `;
 
 const Picture = styled.picture`
-  ${tw`absolute inset-0 invisible md:visible`};
+  ${tw`absolute inset-0 invisible lg:visible`};
 
   img {
     ${tw`object-left object-cover h-full`};
@@ -35,6 +35,7 @@ const Amp = styled.span`
   color: ${(props) => props.theme.colors.gold};
   font-size: 7rem;
   margin-left: -1.5rem;
+  bottom: -2rem;
 `;
 
 const Underline = styled.span`
@@ -62,7 +63,7 @@ const Welcome = () => {
       </Picture>
       <Tint />
       <Content>
-        <h1 className="relative text-5xl mb-8">
+        <h1 className="relative text-5xl">
           <span className="relative z-10">Hi, my name is Krisha</span> <Amp>&</Amp>
         </h1>
         <h2 className="text-3xl">
